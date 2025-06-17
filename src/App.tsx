@@ -5,11 +5,9 @@ function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    { id: 0, label: 'Pricing' },
-    { id: 1, label: 'Tab 2' },
-    { id: 2, label: 'Tab 3' },
-    { id: 3, label: 'Tab 4' },
-    { id: 4, label: 'Tab 5' },
+    { id: 0, label: 'Task 1' },
+    { id: 1, label: 'Task 2' },
+    { id: 2, label: 'Task 3' },
   ];
 
   return (
@@ -42,8 +40,6 @@ function App() {
         {activeTab === 0 && <Prices />}
         {activeTab === 1 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
         {activeTab === 2 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
-        {activeTab === 3 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
-        {activeTab === 4 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
       </main>
     </div>
   );
