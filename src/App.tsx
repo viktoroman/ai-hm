@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Prices from './Prices';
 
 function App() {
   const [activeTab, setActiveTab] = useState(0);
@@ -38,16 +39,7 @@ function App() {
 
       {/* Content */}
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        {activeTab === 0 && (
-          <div className="px-4 py-6 sm:px-0">
-            <h1 className="text-4xl font-bold text-gray-100 mb-4">
-              Welcome to Our React App!
-            </h1>
-            <p className="text-xl text-gray-300">
-              This is a beautiful React application with Tailwind CSS styling.
-            </p>
-          </div>
-        )}
+        {activeTab === 0 && <Prices />}
         {activeTab === 1 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
         {activeTab === 2 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
         {activeTab === 3 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
