@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Prices from './Prices';
+import CustomMenu from './CustomMenu';
 
 function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    { id: 0, label: 'Task 1' },
-    { id: 1, label: 'Task 2' },
-    { id: 2, label: 'Task 3' },
+    { id: 0, label: 'Task #1' },
+    { id: 1, label: 'Task #2' },
+    { id: 2, label: 'Task #3' },
   ];
 
   return (
@@ -38,7 +39,7 @@ function App() {
       {/* Content */}
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         {activeTab === 0 && <Prices />}
-        {activeTab === 1 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
+        {activeTab === 1 && <CustomMenu />}
         {activeTab === 2 && <div className="px-4 py-6 sm:px-0 text-gray-300"></div>}
       </main>
     </div>
