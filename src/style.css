@@ -22,15 +22,14 @@
     width: 100%;
     background: #fff;
     transform: translateY(-150%);
-    transition: .3s ease;
     gap: 0;
     color: #222;
   }
   .menu li {
     padding: 1rem;
   }
-
   .menu.open {
     transform: translateY(0);
+    transition: .3s ease;
   }
 }
