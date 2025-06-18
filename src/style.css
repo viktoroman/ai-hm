@@ -7,6 +7,10 @@
 .menu {
   display: flex;
   gap: 2rem;
+  color: #fff;
+}
+.menu li {
+  cursor: pointer;
 }
 
 @media (max-width:768px) {
@@ -19,6 +23,11 @@
     background: #fff;
     transform: translateY(-150%);
     transition: .3s ease;
+    gap: 0;
+    color: #222;
+  }
+  .menu li {
+    padding: 1rem;
   }
 
   .menu.open {
